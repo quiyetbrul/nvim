@@ -50,7 +50,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'mbbill/undotree'
 Plug 'preservim/nerdtree'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" some language servers aren't working properly
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
