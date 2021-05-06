@@ -3,6 +3,7 @@
 
 syntax on
 
+set ma
 set exrc
 set guicursor=
 set relativenumber
