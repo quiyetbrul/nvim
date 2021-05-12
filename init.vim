@@ -53,7 +53,7 @@ Plug 'mbbill/undotree'
 Plug 'preservim/nerdtree'
 
 " some language servers aren't working properly
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -93,12 +93,18 @@ nnoremap <leader>pv :wincmd V<bar> :Ex <bar> :vertical resize 30<CR>
 " repgrep
 nnoremap <leader>ps :Rg<SPACE>
 
+" source new version
+nnoremap <leader> v: source %<CR>
+
+" Back tab
+nnoremap <Leader>Tab :e#<CR>
+
 " lua telescope not working
 "nnoremap <Leader>ps :lua require('telescope.builtin').grep_string({search = vim.fn.input("Grep For > ")})<CR>
 
 " resize active pane
-nnoremap <silent> <Leader>+ :vertical resize +5<CR>
-nnoremap <silent> <Leader>- :vertical resize -5<CR>
+nnoremap <silent> <Leader>. :vertical resize +5<CR>
+nnoremap <silent> <Leader>, :vertical resize -5<CR>
 
 " YCM not working due to vim not being compiled with python3+
 nnoremap <silent> <Leader>gd :YcmCompleter Goto<CR>
